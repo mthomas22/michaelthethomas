@@ -14,9 +14,9 @@ set :deploy_to, "/var/www/apps/#{application}"
 # If you aren't using Subversion to manage your source code, specify
 # your SCM below:
 default_run_options[:pty] = true
-set :scm, "git"
+set :scm, :git
+set :scm_username, "mthomas22"
 set :scm_passphrase, "password"
-set :user, "mthomas22"
 
 set :branch, "master"
 set :git_shallow_clone, 1
