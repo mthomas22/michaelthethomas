@@ -22,6 +22,6 @@ set :branch, "master"
 set :git_shallow_clone, 1
 
 
-# role :app, "your app-server here"
+role :app, "michaelthethomas.com"
 role :web, "michaelthethomas.com"
 # role :db,  "your db-server here", :primary => true
