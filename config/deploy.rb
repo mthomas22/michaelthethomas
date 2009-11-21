@@ -4,6 +4,7 @@ set :application, "michaelthethomas"
 set :repository,  "git://github.com/mthomas22/michaelthethomas.git"
 set :user, "root"
 set :password, "thomas3l5feX"
+set :use_sudo, false
 
 # If you aren't deploying to /u/apps/#{application} on the target
 # servers (which is the default), you can specify the actual location
@@ -25,3 +26,10 @@ set :git_shallow_clone, 1
 role :app, "michaelthethomas.com"
 role :web, "michaelthethomas.com"
 role :db,  "michaelthethomas.com", :primary => true
+
+namespace :passenger do
+  desc "Restart Application"
+  task :restart do
+    run "touch #{current_path}/tmp/restart.txt"
+  end
+end
