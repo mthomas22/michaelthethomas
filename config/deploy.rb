@@ -38,3 +38,5 @@ namespace :passenger do
     # nothing -- need to override default cap start task when using Passenger
   end
 end
+
+after "deploy", "deploy:cleanup"
