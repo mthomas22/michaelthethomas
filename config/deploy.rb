@@ -2,8 +2,10 @@ set :rails_env, "production"
 
 set :application, "michaelthethomas"
 set :repository,  "git://github.com/mthomas22/michaelthethomas.git"
+# set :user, "root"
+# set :password, "thomas3l5feX"
 set :user, "root"
-set :password, "thomas3l5feX"
+set :password, "michaelthethomas30xToN2Xq"
 set :use_sudo, false
 
 # If you aren't deploying to /u/apps/#{application} on the target
