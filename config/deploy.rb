@@ -2,6 +2,7 @@ set :rails_env, "production"
 
 set :application, "michaelthethomas"
 set :repository,  "git://github.com/mthomas22/michaelthethomas.git"
+# Old server info
 # set :user, "root"
 # set :password, "thomas3l5feX"
 set :user, "root"
@@ -24,10 +25,14 @@ set :scm_passphrase, "password"
 set :branch, "master"
 set :git_shallow_clone, 1
 
+# Old server info
+# role :app, "michaelthethomas.com"
+# role :web, "michaelthethomas.com"
+# role :db,  "michaelthethomas.com", :primary => true
 
-role :app, "michaelthethomas.com"
-role :web, "michaelthethomas.com"
-role :db,  "michaelthethomas.com", :primary => true
+role :app, "173.203.125.236"
+role :web, "173.203.125.236"
+role :db,  "173.203.125.236", :primary => true
 
 namespace :passenger do
   desc "Restart Application"

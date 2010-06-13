@@ -44,5 +44,5 @@ production:
   database: michaelthethomas_production
   pool: 5
   username: root
-  password: 
+  password: password
   socket: /var/lib/mysql/mysql.sock
